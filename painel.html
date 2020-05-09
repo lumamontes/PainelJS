@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <style>
+        * {
+            margin: 2px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #999
+        }
+        header,
+        nav,
+        article {
+            display: block;
+        }
+
+        section {
+            background-color: #999;
+            color: rgba(255, 255, 255, 0.829);
+
+        }
+
+        article {
+            background: #999;
+            border: 1px solid black;
+            margin: 10px 5px;
+            padding: 20px;
+        }
+
+        article h1 {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.877);
+        }
+
+        article p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.938);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid #333;
+
+        }
+
+        header img {
+            width: 800px;
+            height: 200px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.795);
+
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 10px 10px;
+            padding: px;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(0, 0, 0)
+
+        }
+
+        #artigos {
+            width: 60%;
+            float: left;
+            border: 1px solid black;
+        }
+
+        #painel {
+            width: 38%;
+            float: right;
+            border: 1px solid rgb(0, 0, 0);
+            margin: 1px auto;
+            text-align: center;
+        }
+
+        .buttons h2 {
+            background: rgba(0, 0, 0, 0.678);
+
+        }
+
+        section#painel .buttons {
+            border: none;
+
+        }
+
+        input {
+            background: rgb(53, 49, 49);
+            color: rgba(255, 255, 255, 0.877);
+
+            width: 60px;
+            height: 36px;
+
+            border-radius: 4px;
+
+            font-size: 14px;
+
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #painel div {
+            border: 1px solid rgba(255, 255, 255, 0.911);
+            margin: 5px 20px
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id='imagem' src="https://www.ecopetit.cat/wpic/mpic/1-14509_minimalist-wallpaper-mountains.jpg">
+
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>ART 01</li>
+            <li>ART 02</li>
+            <li> ART 03</li>
+        </ul>
+    </nav>
+    <main>
+        <section id="artigos">
+            <article>
+                <h1>Artigo 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aperiam, quasi? Facere inventore fugiat officiis veritatis similique quis debitis iure, natus
+                    facilis ab reprehenderit adipisci.
+                    Autem officiis quisquam eum omnis facere.</p>
+            </article >
+
+            <article>
+                <h1>Artigo 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aperiam, quasi? Facere inventore fugiat officiis veritatis similique quis debitis iure, natus
+                    facilis ab reprehenderit adipisci.
+                    Autem officiis quisquam eum omnis facere.</p>
+            </article>
+
+            <article>
+                <h1>Artigo 3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aperiam, quasi? Facere inventore fugiat officiis veritatis similique quis debitis iure, natus
+                    facilis ab reprehenderit adipisci.
+                    Autem officiis quisquam eum omnis facere.</p>
+            </article>
+
+        </section>
+
+
+        <section id="painel">
+            <h1> Painel de controle</h1>
+            <div class="buttons">
+                <div class="imgheader">
+                    <h2>Troca imagem Topo</h2>
+                    <input id='imagem1'type="button" value="1">
+                    <input id ='imagem2'type="button" value="2">
+                    <input id='imagem'type="button" value="3">
+                </div>
+
+                <br>
+                <div class="background">
+                    <h2>Background da Página</h2>
+                    <input id='azul'type="button" value="1">
+                    <input id='vermelho'type="button" value="2">
+                    <input id ='roxo'type="button" value="3">
+                   
+                    
+                </div>
+                <div>
+                    <h2>Background do Artigo</h2>
+                    <input id='verde'type="button" value="1">
+                    <input id='rosa'type="button" value="2">
+                    <input id ='preto'type="button" value="3">
+                </div>
+                <div>
+                    <h2>Tamanho do Título</h2>
+                    <input id='tpequeno'type="button" value="1">
+                    <input id ='tmedio'type="button" value="2">
+                    <input id='tgrande'type="button" value="3">
+                </div>
+                <div>
+                    <h2>Tamanho do texto</h2>
+                    <input id='txtgrande'type="button" value="1">
+                    <input id ='txtmedio'type="button" value="2">
+                    <input id='txtpequeno'type="button" value="3">
+                </div>
+                <div>
+                    <h2>Cor Título</h2>
+                    <input id='amarelo'type="button" value="1">
+                    <input id ='azul2'type="button" value="2">
+                    <input id='vinho'type="button" value="3">
+                </div>
+
+                <div>
+                    <h2>Cor Letras</h2>
+                    <input id='letraVermelha'type="button" value="1">
+                    <input id ='letraAzul'type="button" value="2">
+                    <input id='letraVerde'type="button" value="3">
+                </div>
+
+                <div>
+                    <h2>Cor Bordas</h2>
+                    <input id='bordabranca'type="button" value="1">
+                    <input id ='bordaroxa'type="button" value="2">
+                    <input id='bordaazul'type="button" value="3">
+                </div>
+
+                <div>
+                    <h2>Remover Bordas</h2>
+                    <input id='azul'type="button" value="1">
+                    <input id ='roxo'type="button" value="2">
+                    <input id='vermelho'type="button" value="3">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="jquery-3.5.0.min.js"></script>
+
+    <script>
+
+        // --BACKGROUND DA PÁGINA
+        
+        function mudarCorBackgroundAzul(){
+            $('body').css('background-color', '#3371e2de')
+         }
+         
+                function mudarCorBackgroundVermelho(){
+                     $('body').css('background-color', '#ff0000af')
+                 }
+         
+        function mudarCorBackgroundRoxo(){
+            $('body').css('background-color', '#7000ccc7')
+        }
+
+        
+       
+        $('input#azul').click(mudarCorBackgroundAzul)      
+        $('input#roxo').click(mudarCorBackgroundRoxo)
+        $('input#vermelho').click(mudarCorBackgroundVermelho)
+
+
+        // --Background do Artigo
+
+        function mudarCorArtigoVerde() {
+            $('article').css('background-color', '#0ed40ebd')
+        }
+        
+        function mudarCorArtigoRosa() {
+            $('article').css('background-color', '#ff00f2ab')
+        }
+        function mudarCorArtigoPreto() {
+            $('article').css('background-color', '#000000ee')
+        }
+
+
+        $('input#verde').click(mudarCorArtigoVerde)
+        $('input#rosa').click(mudarCorArtigoRosa)
+        $('input#preto').click(mudarCorArtigoPreto)
+        //Tamanho do Título
+
+        function TamanhoTituloPequeno (){
+            $('article h1').css ('font-size', '19px')
+        }
+        
+        function TamanhoTituloMedio (){
+            $('article h1').css ('font-size', '26px')
+        }
+        function TamanhoTituloGrande (){
+            $('article h1').css ('font-size', '30px')
+        }
+        
+        
+        $('input#tpequeno').click(TamanhoTituloPequeno)
+        $('input#tmedio').click(TamanhoTituloMedio)
+        $('input#tgrande').click(TamanhoTituloGrande)
+
+        //Tamanho do Texto
+
+        function textoGrande (){
+            $('p').css('font-size', '28px')
+        }
+        function textoMedio (){
+            $('p').css('font-size', '23px')
+        }
+        
+        function textoPequeno (){
+            $('p').css('font-size', '16px')
+        }
+        $('input#txtgrande').click(textoGrande)
+        $('input#txtmedio').click(textoMedio)
+        $('input#txtpequeno').click(textoPequeno)
+    
+        //------Cor Título
+    
+        function corTituloAmarelo () {
+            $('article h1').css('color','yellow')
+        }
+        function corTituloAzul () {
+            $('article h1').css('color', 'blue')
+        }
+        function corTituloVinho () {
+            $('article h1').css('color','#ff00007c')
+        }
+
+        $('input#amarelo').click(corTituloAmarelo)
+        $('input#azul2').click(corTituloAzul)
+        $('input#vinho').click(corTituloVinho)
+        
+
+        // ---- cor LETRAS
+
+   function corLetraRed(){
+       $('p').css('color', '#ff0000bd')
+   }
+
+   function corLetraAzul(){
+       $('p').css('color', '#7c93fa')
+   }
+
+   function corLetraVerde(){
+       $('p').css('color', '#00ff55')
+   }
+
+   $('input#letraVermelha').click(corLetraRed)
+   $('input#letraAzul').click(corLetraAzul)
+   $('input#letraVerde').click(corLetraVerde)
+
+   //---cor BORDAS
+
+   $('body, article, nav, section, div').addClass('bordas')
+
+   function corBordaBranca (){
+       $('.bordas').css('border', '1px solid white')
+   }
+
+   function corBordaRoxa (){
+       $('.bordas').css('border', '1px solid #ae00ff')
+   }
+
+   function corBordaAzul (){
+       $('.bordas').css('border', '1px solid #1900ff57')
+   }
+
+   $('input#bordabranca').click(corBordaBranca)
+   $('input#bordaroxa').click(corBordaRoxa)
+   $('input#bordaazul').click(corBordaAzul)
+
+
+</script>
+
+</body>
+
+</html>
+
+<!--header img 2 
+header img 3 https://assets.hongkiat.com/uploads/beautiful-minimalist-desktop-wallpapers/spring-plants-macro-branches.jpg -->
