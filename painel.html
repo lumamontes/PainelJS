@@ -255,10 +255,7 @@
          
         function mudarCorBackgroundRoxo(){
             $('body').css('background-color', '#7000ccc7')
-        }
-
-        
-       
+        }    
         $('input#azul').click(mudarCorBackgroundAzul)      
         $('input#roxo').click(mudarCorBackgroundRoxo)
         $('input#vermelho').click(mudarCorBackgroundVermelho)
@@ -352,7 +349,7 @@
 
    //---cor BORDAS
 
-   $('body, main, div, section, article').addClass('bordas')
+   $('body, main, div, section, article, header').addClass('bordas')
 
    function corBordaBranca (){
        $('.bordas').css('border', '1px solid white')
@@ -372,9 +369,13 @@
 
 // ------REMOVER BORDAS
 
-  $('remove').click(function(){
-    $('.bordas').css('border', '0px')
-  })
+
+$('input#remove').click(function(){
+    $('body, main, div, section, article, header').addClass('semborda')
+    $('.semborda').css('border', 'none')
+})
+
+
 
 </script>
 
