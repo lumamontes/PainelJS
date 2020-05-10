@@ -53,7 +53,7 @@
 
         header img {
             width: 800px;
-            height: 200px;
+            height:400px
         }
 
         nav ul {
@@ -116,6 +116,10 @@
             outline: 0;
             transition-duration: 200ms;
 
+        }
+
+        input#remove, input#inicial {
+            width: 100px;
         }
         input:hover {
             background-color: rgb(18, 80, 214);
@@ -180,7 +184,7 @@
                     <h2>Troca imagem Topo</h2>
                     <input id='imagem1'type="button" value="1">
                     <input id ='imagem2'type="button" value="2">
-                    <input id='imagem'type="button" value="3">
+                    <input id='imagem3'type="button" value="3">
                 </div>
 
                 <br>
@@ -236,12 +240,36 @@
                     <input id='remove'type="button" value="Remover">
                 </div>
 
+                <div>
+                    <h2>Configuração Inicial</h2>
+                    <input id='inicial'type="button" value="Reset">
+                </div>
+
             </div>
         </section>
     </main>
     <script src="jquery-3.5.0.min .js"></script>
 
     <script>
+
+// -- TROCAR IMAGEM TOP
+
+$('#imagem1').click(function () {
+        $("#imagem").attr({ "src": "https://assets.hongkiat.com/uploads/beautiful-minimalist-desktop-wallpapers/spring-plants-macro-branches.jpg" });
+        
+    });
+
+    $('#imagem2').click(function () {
+        $("#imagem").attr({ "src": "https://asset.wallpaperhunt.net/12781-minimalist-wallpaper-3840x2160-158793834779378_preview_900.jpg" });
+        
+    });
+    $('#imagem3').click(function () {
+        $("#imagem").attr({ "src": "https://c4.wallpaperflare.com/wallpaper/36/14/561/minimalism-minimalist-mountains-landscape-wallpaper-preview.jpg" });
+        
+    });
+    
+
+
 
         // --BACKGROUND DA PÁGINA
         
@@ -376,6 +404,14 @@ $('input#remove').click(function(){
 })
 
 
+$('input#inicial').click(function(){
+    $('body, section, article, header').css({'background': '#999', 'border': '1px solid black'})
+    $('h1').css({'font-size': '24px', 'color':'rgba(255, 255, 255, 0.877)'})
+    $('p').css({'font-size': '16px', 'color':'rgba(255, 255, 255, 0.877)'})
+        $("#imagem").attr({ "src": "https://www.ecopetit.cat/wpic/mpic/1-14509_minimalist-wallpaper-mountains.jpg" });
+})
+
+
 
 </script>
 
@@ -384,4 +420,4 @@ $('input#remove').click(function(){
 </html>
 
 <!--header img 2 
-header img 3 https://assets.hongkiat.com/uploads/beautiful-minimalist-desktop-wallpapers/spring-plants-macro-branches.jpg -->
+header img 3 -->
