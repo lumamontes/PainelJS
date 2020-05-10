@@ -24,6 +24,7 @@
         section {
             background-color: #999;
             color: rgba(255, 255, 255, 0.829);
+            margin-top: 10px;
 
         }
 
@@ -76,13 +77,14 @@
             width: 60%;
             float: left;
             border: 1px solid black;
+            margin-top: 20px;
         }
 
         #painel {
             width: 38%;
             float: right;
             border: 1px solid rgb(0, 0, 0);
-            margin: 1px auto;
+            margin: 20px auto;
             text-align: center;
         }
 
@@ -109,7 +111,15 @@
 
             align-items: center;
             justify-content: center;
+            box-shadow: 0 0 0 0;
+            border: 0 none;
+            outline: 0;
+            transition-duration: 200ms;
 
+        }
+        input:hover {
+            background-color: rgb(18, 80, 214);
+            opacity: 90%;
         }
 
         #painel div {
@@ -223,15 +233,13 @@
 
                 <div>
                     <h2>Remover Bordas</h2>
-                    <input id='azul'type="button" value="1">
-                    <input id ='roxo'type="button" value="2">
-                    <input id='vermelho'type="button" value="3">
+                    <input id='remove'type="button" value="Remover">
                 </div>
 
             </div>
         </section>
     </main>
-    <script src="jquery-3.5.0.min.js"></script>
+    <script src="jquery-3.5.0.min .js"></script>
 
     <script>
 
@@ -344,24 +352,29 @@
 
    //---cor BORDAS
 
-   $('body, article, nav, section, div').addClass('bordas')
+   $('body, main, div, section, article').addClass('bordas')
 
    function corBordaBranca (){
        $('.bordas').css('border', '1px solid white')
    }
 
    function corBordaRoxa (){
-       $('.bordas').css('border', '1px solid #ae00ff')
+       $('.bordas').css('border', '1px solid red')
    }
 
    function corBordaAzul (){
-       $('.bordas').css('border', '1px solid #1900ff57')
+       $('.bordas').css('border', ' 1px solid pink')
    }
 
    $('input#bordabranca').click(corBordaBranca)
    $('input#bordaroxa').click(corBordaRoxa)
    $('input#bordaazul').click(corBordaAzul)
 
+// ------REMOVER BORDAS
+
+  $('remove').click(function(){
+    $('.bordas').css('border', '0px')
+  })
 
 </script>
 
